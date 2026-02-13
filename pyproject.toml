@@ -7,7 +7,11 @@ name = "ANARCI"
 requires-python = ">=3.8"
 description = "Antibody Numbering and Antigen Receptor ClassIfication"
 readme = "README.md"
-authors = [{ name = "James Dunbar", email = "opig@stats.ox.ac.uk" }]
+authors = [
+    { name = "James Dunbar", email = "dunbar@stats.ox.ac.uk" },
+    { name = "Charlotte Deane", email = "deane@stats.ox.ac.uk" },
+    { name = "Oxford Protein Informatics Group (OPIG)", email = "opig@stats.ox.ac.uk" },
+]
 maintainers = [{ name = "Nuri Jung", email = "jnooree@snu.ac.kr" }]
 dependencies = ["biopython"]
 dynamic = ["version"]
