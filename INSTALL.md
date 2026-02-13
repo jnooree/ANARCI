@@ -1,19 +1,28 @@
-########################
-# ANARCI INSTALLATION  #
-########################
+# ANARCI INSTALLATION
 
-Requirements:
-    - HMMER3 version 3.1 or higher - http://hmmer.janelia.org/ 
-	- Biopython
+- Create a conda environment using the provided environment.yml file:
 
-To install, simply run:
+  ```shell
+  conda env create -f build_pipeline/environment.yml
+  conda activate anarci-build
+  ```
 
-python setup.py install
+- Run the build pipeline to download germline data and build HMMs. During the
+  build process, germline data will be downloaded from IMGT/GENE-DB and used to
+  build hidden Markov models.
 
-During the installation process, germline data will be downloaded from IMGT/GENE-DB and used to build hidden Markov models.
+  ```shell
+  build_pipeline/RUN_pipeline.sh
+  ```
 
-For more information about installing python programs see:
-https://docs.python.org/2/install/#alternate-installation-the-user-scheme
+- Then install ANARCI using pip:
 
-For help see README or run:
-$ ANARCI -h
+  ```shell
+  pip install [-e] .
+  ```
+
+- For help see README or run:
+
+  ```shell
+  ANARCI -h
+  ```

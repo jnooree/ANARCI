@@ -1,3 +1,12 @@
-__version__ = "1.b"
+from importlib.metadata import PackageNotFoundError, version
+
+from . import anarci, schemes
+
 __all__ = ["anarci", "schemes"]
-from .anarci import *
+
+try:
+    __version__ = version("ANARCI")
+except PackageNotFoundError:
+    pass
+
+del PackageNotFoundError, version
