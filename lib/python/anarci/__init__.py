@@ -1,6 +1,7 @@
 from importlib.metadata import PackageNotFoundError, version
 
 from . import anarci, schemes
+from .anarci import *
 
 __all__ = ["anarci", "schemes"]
 
