@@ -1,3 +1,21 @@
+**:warning: DISCLAIMER**
+
+This is a personal fork maintained by [Nuri Jung](https://github.com/jnooree)
+independently of the Oxford Protein Informatics Group (OPIG). The purpose of
+this fork is solely to facilitate installation via PyPI (`pip install ANARCI`)
+for pipelines requiring the original ANARCI v1 implementation.
+
+This software is not officially supported, authorized, or sponsored by the
+original authors. Any references to OPIG or the original ANARCI project are for
+attribution purposes only.
+
+- **Original Repository:** [oxpig/ANARCI](https://github.com/oxpig/ANARCI)
+  (Official Source)
+- **Newer Version:** [oxpig/ANARCII](https://github.com/oxpig/ANARCII)
+  (Language model-based)
+
+---
+
 ```
 ANARCI                                                 \\    //
 Antibody Numbering and Antigen Receptor ClassIfication  \\  //
@@ -199,4 +217,3 @@ Other species may still be numbered correctly and the chain type recognised but 
             although these are unlikely to occur in natural sequences. The CDRs are numbered in an 'up' and 'down' direction.
             The annotations of CDRL1 is defined according to the canonical structure. In ANARCI this is recognised by taking
             a sequence similarity to hard coded sequence motifs for different lengths.
-
